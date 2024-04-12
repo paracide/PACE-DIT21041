@@ -1,6 +1,5 @@
 package class1;
 
-import java.awt.*;
 import java.sql.Timestamp;
 
 public class Today {
