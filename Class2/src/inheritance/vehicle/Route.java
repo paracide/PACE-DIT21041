@@ -1,4 +1,4 @@
-package inheritace;
+package inheritance.vehicle;
 
 public class Route {
   private int number;

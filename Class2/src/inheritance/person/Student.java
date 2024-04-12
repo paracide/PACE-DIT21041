@@ -1,4 +1,4 @@
-package inheritace;
+package inheritance.person;
 
 public class Student extends Passenger {
   public Student(String name, int age) {

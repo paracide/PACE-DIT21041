@@ -1,4 +1,4 @@
-package inheritace;
+package inheritance.state;
 
 public class VehicleStateFullStop extends VehicleState {
 

@@ -1,3 +1,3 @@
-package inheritace;
+package inheritance.state;
 
 public class EngineState {}

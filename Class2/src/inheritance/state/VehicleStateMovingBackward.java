@@ -1,4 +1,4 @@
-package inheritace;
+package inheritance.state;
 
 public class VehicleStateMovingBackward extends VehicleState {
 

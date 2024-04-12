@@ -1,4 +1,4 @@
-package inheritace;
+package inheritance.person;
 
 public class Driver extends Person {
   public Driver(String name, int age) {

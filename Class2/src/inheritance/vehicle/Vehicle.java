@@ -1,4 +1,10 @@
-package inheritace;
+package inheritance.vehicle;
+
+import inheritance.person.Driver;
+import inheritance.state.VehicleState;
+import inheritance.state.VehicleStateFullStop;
+import inheritance.state.VehicleStateMovingBackward;
+import inheritance.state.VehicleStateMovingForward;
 
 public abstract class Vehicle {
   private int wheels;
@@ -13,6 +19,9 @@ public abstract class Vehicle {
     this.engine = engine;
   }
 
+  public abstract void openDoor();
+
+  public abstract void closeDoor();
 
   public void start() {
     engine.powerOn();

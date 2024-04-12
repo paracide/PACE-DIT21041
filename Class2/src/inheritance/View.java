@@ -1,4 +1,9 @@
-package inheritace;
+package inheritance;
+
+import inheritance.person.Driver;
+import inheritance.vehicle.Bus;
+import inheritance.vehicle.Engine;
+import inheritance.vehicle.Route;
 
 public class View {
   public static void main(String[] args) {
