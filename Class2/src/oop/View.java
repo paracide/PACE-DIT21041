@@ -12,9 +12,9 @@ public class View {
     laptop.setTouchPad(touchPad);
 
     laptop.open();
-    if(laptop.isOpened()){
-        Software intellij = new Software("Intellij", 300, "en");
-        laptop.installSoftware(intellij);
+    if (laptop.isOpened()) {
+      Software intellij = new Software("Intellij", 300, "en");
+      laptop.installSoftware(intellij);
     }
   }
 }
