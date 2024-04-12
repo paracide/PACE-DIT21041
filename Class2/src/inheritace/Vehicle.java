@@ -6,7 +6,7 @@ public class Vehicle {
   private String fuelType;
   private Driver driver;
   private Engine engine;
-  private VehicleState vehicleState = VehicleState.breakFullStop;
+  private VehicleState vehicleState;
 
   public Vehicle(Driver driver, Engine engine) {
     this.driver = driver;
@@ -23,18 +23,18 @@ public class Vehicle {
 
   public void moveForward() {
     if (engine.isRunning()) {
-      vehicleState =VehicleState.forward;
+      vehicleState =new VehicleStateForward();
     }
   }
 
   public void moveBackward() {
     if (engine.isRunning()) {
-      vehicleState =VehicleState.backward;
+      vehicleState =new VehicleStateBackward();
     }
   }
 
   public void breakBus() {
-    vehicleState =VehicleState.breakFullStop;
+    vehicleState = new VehicleStateBreak();
   }
 
   public int getWheels() {
