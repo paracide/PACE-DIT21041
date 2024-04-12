@@ -1,6 +1,6 @@
 package inheritace;
 
-public class VehicleStateForward extends VehicleState{
+public class VehicleStateMovingForward extends VehicleState{
   @Override
   public String toString() {
     return "Back";

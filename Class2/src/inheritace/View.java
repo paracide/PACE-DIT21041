@@ -10,7 +10,7 @@ public class View {
     bus11.stop();
     bus11.start();
     bus11.moveForward();
-    bus11.breakBus();;
+    bus11.breakFullStop();;
     System.out.println(bus11.getVehicleState());
   }
 }

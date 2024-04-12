@@ -18,23 +18,24 @@ public class Vehicle {
   }
 
   public void stop() {
+    breakFullStop();
     engine.powerOff();
   }
 
   public void moveForward() {
     if (engine.isRunning()) {
-      vehicleState =new VehicleStateForward();
+      vehicleState =new VehicleStateMovingForward();
     }
   }
 
   public void moveBackward() {
     if (engine.isRunning()) {
-      vehicleState =new VehicleStateBackward();
+      vehicleState =new VehicleStateMovingBackward();
     }
   }
 
-  public void breakBus() {
-    vehicleState = new VehicleStateBreak();
+  public void breakFullStop() {
+    vehicleState = new VehicleStateFullStop();
   }
 
   public int getWheels() {
