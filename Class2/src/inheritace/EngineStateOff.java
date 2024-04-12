@@ -1,3 +1,3 @@
 package inheritace;
 
-public class EngineStateOff extends EngineState{}
+public class EngineStateOff extends EngineState {}

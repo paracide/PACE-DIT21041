@@ -12,9 +12,4 @@ public class Bus extends Vehicle {
     super(driver, engine);
     this.route = route;
   }
-
-  public void openDoor() {}
-
-  public void closeDoor() {}
-
 }

@@ -31,6 +31,10 @@ public class Laptop {
     this.price = price > 0 ? price : 0;
   }
 
+  public static int getNumberOfLaptops() {
+    return numberOfLaptops;
+  }
+
   public void installSoftware(Software software) {
     software.runInstallation();
   }
@@ -57,10 +61,6 @@ public class Laptop {
 
   public void close() {
     this.status = 4;
-  }
-
-  public static int getNumberOfLaptops() {
-    return numberOfLaptops;
   }
 
   public Monitor getMonitor() {

@@ -1,5 +1,3 @@
 package inheritace;
 
-public class VehicleState {
-
-}
+public class VehicleState {}

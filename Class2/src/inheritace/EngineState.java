@@ -1,5 +1,3 @@
 package inheritace;
 
-public class EngineState {
-
-}
+public class EngineState {}

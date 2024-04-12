@@ -1,6 +1,6 @@
 package inheritace;
 
-public class Vehicle {
+public abstract class Vehicle {
   private int wheels;
   private int capacity;
   private String fuelType;
@@ -13,6 +13,7 @@ public class Vehicle {
     this.engine = engine;
   }
 
+
   public void start() {
     engine.powerOn();
   }
@@ -24,13 +25,13 @@ public class Vehicle {
 
   public void moveForward() {
     if (engine.isRunning()) {
-      vehicleState =new VehicleStateMovingForward();
+      vehicleState = new VehicleStateMovingForward();
     }
   }
 
   public void moveBackward() {
     if (engine.isRunning()) {
-      vehicleState =new VehicleStateMovingBackward();
+      vehicleState = new VehicleStateMovingBackward();
     }
   }
 
