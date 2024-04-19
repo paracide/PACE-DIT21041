@@ -42,6 +42,6 @@ public class Fruit implements Comparable<Fruit> {
 
   @Override
   public int compareTo(Fruit otherFruit) {
-    return price == otherFruit.price ? 0 : price < otherFruit.price ? -1 : 1;
+    return name.compareTo(otherFruit.getName());
   }
 }

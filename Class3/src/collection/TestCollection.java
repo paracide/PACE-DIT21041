@@ -14,7 +14,7 @@ public class TestCollection {
     Fruit watermelon = new Fruit("watermelon", 150, 112.2);
     Fruit lemon = new Fruit("lemon", 5, 22.22);
     Fruit[] fruits = {orange, cherry, watermelon, lemon, new Fruit("kiwi", 10, 10.1)};
-    fruits = addElements(fruits, new Fruit("Grape", 1, 10));
+    fruits = addElements(fruits, new Fruit("grape", 1, 10));
 
     Arrays.sort(fruits);
     for (Fruit fruit : fruits) {
