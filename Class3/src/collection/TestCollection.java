@@ -18,6 +18,7 @@ public class TestCollection {
 
     String[] fruits = {"apple", "banana", "lemon", "orange"};
     fruits = addElements(fruits, "cherry");
+    Arrays.sort(fruits);
     System.out.println(Arrays.toString(fruits));
   }
 
