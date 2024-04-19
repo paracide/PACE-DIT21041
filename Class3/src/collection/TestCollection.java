@@ -15,13 +15,21 @@ public class TestCollection {
     numbers = addElements(numbers, 66);
     System.out.println(Arrays.toString(numbers));
     System.out.println(Arrays.toString(args));
-    // List
 
+    String[] fruits = {"apple", "banana", "lemon", "orange"};
+    fruits = addElements(fruits, "cherry");
+    System.out.println(Arrays.toString(fruits));
   }
 
   public static int[] addElements(int[] arr, int addNum) {
     int[] result = Arrays.copyOf(arr, arr.length + 1);
     result[result.length - 1] = addNum;
+    return result;
+  }
+
+  public static String[] addElements(String[] fruits, String fruit) {
+    String[] result = Arrays.copyOf(fruits, fruits.length + 1);
+    result[result.length - 1] = fruit;
     return result;
   }
 }
