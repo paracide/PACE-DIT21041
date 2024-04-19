@@ -5,18 +5,31 @@ import java.util.Arrays;
 public class TestCollection {
   public static void main(String[] args) {
     // Array
-    playWithInt(args);
-    playWithString();
+    // playWithInt(args);
+    // playWithString();
+    // playWith2dArray();
 
+    Fruit orange = new Fruit("orange", 10, 12.2);
+    Fruit cherry = new Fruit("cherry", 2, 11.11);
+    Fruit watermelon = new Fruit("watermelon", 150, 112.2);
+    Fruit lemon = new Fruit("lemon", 5, 22.22);
+    Fruit[] fruits = {orange, cherry, watermelon, lemon, new Fruit("kiwi", 10, 10.1)};
+    fruits = addElements(fruits, new Fruit("Grape", 1, 10));
+    for (Fruit fruit : fruits) {
+      System.out.println(fruit);
+    }
+  }
+
+  private static void playWith2dArray() {
     // 2d Array
     String[][] fruits = {{"apple", "banana", "lemon", "orange"}, {"2.11", "3.33", "6.66", "10.10"}};
     for (int i = 0; i < fruits[0].length; i++) {
       System.out.println(fruits[0][i] + " - " + fruits[1][i]);
     }
 
-    for (int i = 0; i < fruits.length; i++) {
-      for (int j = 0; j < fruits[i].length; j++) {
-        System.out.println(fruits[i][j]);
+    for (String[] fruit : fruits) {
+      for (String s : fruit) {
+        System.out.println(s);
       }
     }
   }
