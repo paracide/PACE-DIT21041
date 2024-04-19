@@ -1,6 +1,6 @@
 package collection;
 
-public class Fruit {
+public class Fruit implements Comparable<Fruit> {
   private String name;
   private int quantity;
   private double price;
@@ -38,5 +38,10 @@ public class Fruit {
   @Override
   public String toString() {
     return "Fruit{" + "name='" + name + '\'' + ", quantity=" + quantity + ", price=" + price + '}';
+  }
+
+  @Override
+  public int compareTo(Fruit otherFruit) {
+    return price == otherFruit.price ? 0 : price < otherFruit.price ? -1 : 1;
   }
 }

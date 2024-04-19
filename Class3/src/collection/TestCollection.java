@@ -15,6 +15,8 @@ public class TestCollection {
     Fruit lemon = new Fruit("lemon", 5, 22.22);
     Fruit[] fruits = {orange, cherry, watermelon, lemon, new Fruit("kiwi", 10, 10.1)};
     fruits = addElements(fruits, new Fruit("Grape", 1, 10));
+
+    Arrays.sort(fruits);
     for (Fruit fruit : fruits) {
       System.out.println(fruit);
     }
