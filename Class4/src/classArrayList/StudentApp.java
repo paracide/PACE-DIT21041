@@ -14,8 +14,8 @@ public class StudentApp {
     Scanner scanner = new Scanner(System.in);
     StudentManagement management = new StudentManagement();
     while (true) {
-      System.out.println(
-          "1. Add Students\n2. Del Students\n5. Show Students\n6. Exit Students\nSelect an option");
+      System.out.print(
+          "\n1. Add Students\n2. Del Students\n5. Show Students\n6. Exit Students\nSelect an option:");
       int option = Integer.parseInt(scanner.nextLine());
       if (option == 6) {
         break;
@@ -49,8 +49,9 @@ public class StudentApp {
   }
 
   private static void delStudent(Scanner scanner, StudentManagement management) {
-    int index = Integer.parseInt(askInput("The index of the student: ", scanner));
-    management.removeStudent(index);
+    management.listStudents();
+    int index = Integer.parseInt(askInput("Type the index of the student to remove: ", scanner));
+    management.removeStudent(index - 1);
   }
 
   private static String askInput(String question, Scanner scanner) {
