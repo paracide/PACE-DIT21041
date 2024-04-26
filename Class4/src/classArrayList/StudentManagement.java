@@ -15,6 +15,6 @@ public class StudentManagement {
   }
 
   public void listStudents() {
-    students.forEach(v -> System.out.printf("%s has a ", v.getFullName(), v.getLaptopType()));
+    students.forEach(v -> System.out.printf("%s has a %s\n", v.getFullName(), v.getLaptopType()));
   }
 }
