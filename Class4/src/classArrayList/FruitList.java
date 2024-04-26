@@ -20,5 +20,6 @@ public class FruitList {
     }
     System.out.println("This is your fruit basket:");
     fruits.forEach(System.out::println);
+    scanner.close();
   }
 }
