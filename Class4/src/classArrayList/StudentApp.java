@@ -15,7 +15,12 @@ public class StudentApp {
     StudentManagement management = new StudentManagement();
     while (true) {
       System.out.print(
-          "\n1. Add Students\n2. Del Students\n5. Show Students\n6. Exit Students\nSelect an option:");
+          "\n1. Add Students\n"
+              + "2. Del Students By Id\n"
+              + "3. Del Students By Full Name\n"
+              + "5. Show Students\n"
+              + "6. Exit Students\n"
+              + "Select an option:");
       int option = Integer.parseInt(scanner.nextLine());
       if (option == 6) {
         break;
@@ -25,7 +30,10 @@ public class StudentApp {
           addStudent(scanner, management);
           break;
         case REMOVE_STUDENT:
-          delStudent(scanner, management);
+          delStudentById(scanner, management);
+          break;
+        case REMOVE_STUDENT_BY_NAME:
+          delStudentByName(scanner, management);
           break;
         case LIST_STUDENT:
           management.listStudents();
@@ -48,10 +56,16 @@ public class StudentApp {
     }
   }
 
-  private static void delStudent(Scanner scanner, StudentManagement management) {
+  private static void delStudentById(Scanner scanner, StudentManagement management) {
     management.listStudents();
     int index = Integer.parseInt(askInput("Type the index of the student to remove: ", scanner));
     management.removeStudent(index - 1);
+  }
+
+  private static void delStudentByName(Scanner scanner, StudentManagement management) {
+    management.listStudents();
+    String fullName = askInput("Type the full name of the student to remove: ", scanner).trim();
+    management.removeStudent(fullName);
   }
 
   private static String askInput(String question, Scanner scanner) {

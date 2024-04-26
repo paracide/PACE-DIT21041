@@ -14,6 +14,14 @@ public class StudentManagement {
     students.remove(index);
   }
 
+  public void removeStudent(String name) {
+    students.removeIf(v -> name.equalsIgnoreCase(v.getFullName()));
+  }
+
+  public void removeStudent() {
+    students.clear();
+  }
+
   public void listStudents() {
     System.out.println("Here are students' info:");
     for (int i = 0; i < students.size(); i++) {
