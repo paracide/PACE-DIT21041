@@ -11,7 +11,7 @@ public class FruitList {
     System.out.println("Type a fruit now:");
     while (scanner.hasNextLine()) {
       String next = scanner.nextLine();
-      if (next.equals("quit")) {
+      if ("quit".equalsIgnoreCase(next)) {
         System.out.println("Input over");
         break;
       }
