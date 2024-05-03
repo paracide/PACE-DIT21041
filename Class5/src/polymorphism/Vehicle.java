@@ -1,3 +1,5 @@
+package polymorphism;
+
 public class Vehicle {
   private String brand;
   private int year;
@@ -31,5 +33,11 @@ public class Vehicle {
 
   public void setVin(String vin) {
     this.vin = vin;
+  }
+
+  @Override
+  public String toString() {
+    return String.format(
+        "[%s] %s/%s/%s", getClass().getSimpleName(), getBrand(), getYear(), getVin());
   }
 }

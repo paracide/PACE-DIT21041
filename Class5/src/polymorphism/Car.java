@@ -1,3 +1,5 @@
+package polymorphism;
+
 public class Car extends Vehicle {
   private int numberOfDoors;
 
@@ -12,5 +14,10 @@ public class Car extends Vehicle {
 
   public void setNumberOfDoors(int numberOfDoors) {
     this.numberOfDoors = numberOfDoors;
+  }
+
+  @Override
+  public String toString() {
+    return super.toString() + "/" + getNumberOfDoors();
   }
 }
