@@ -1,6 +1,6 @@
 package polymorphism;
 
-public class Vehicle {
+public abstract class Vehicle {
   private String brand;
   private int year;
   private String vin;
@@ -10,6 +10,8 @@ public class Vehicle {
     this.year = year;
     this.vin = vin;
   }
+
+  public abstract void drive();
 
   public String getBrand() {
     return brand;
