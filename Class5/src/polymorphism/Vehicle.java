@@ -40,4 +40,10 @@ public class Vehicle {
     return String.format(
         "[%s] %s/%s/%s", getClass().getSimpleName(), getBrand(), getYear(), getVin());
   }
+
+  @Override
+  public boolean equals(Object obj) {
+    Vehicle comparor = (Vehicle) obj;
+    return brand.equalsIgnoreCase(comparor.getBrand()) && year == comparor.getYear();
+  }
 }
