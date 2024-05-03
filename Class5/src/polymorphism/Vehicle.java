@@ -1,6 +1,6 @@
 package polymorphism;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Hookable, Saleable {
   private String brand;
   private int year;
   private String vin;
@@ -47,5 +47,10 @@ public abstract class Vehicle {
   public boolean equals(Object obj) {
     Vehicle comparor = (Vehicle) obj;
     return brand.equalsIgnoreCase(comparor.getBrand()) && year == comparor.getYear();
+  }
+
+  @Override
+  public void sale() {
+    System.out.println(brand + " is free");
   }
 }

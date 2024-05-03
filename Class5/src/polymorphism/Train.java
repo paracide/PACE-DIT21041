@@ -7,6 +7,11 @@ public class Train extends Vehicle {
 
   @Override
   public void drive() {
+    System.out.println("G22");
+  }
+
+  @Override
+  public void hook() {
     System.out.println("Wula");
   }
 }

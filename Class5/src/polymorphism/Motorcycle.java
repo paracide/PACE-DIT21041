@@ -10,4 +10,9 @@ public class Motorcycle extends Vehicle {
   public void drive() {
     System.out.println("你很机车耶");
   }
+
+  @Override
+  public void hook() {
+    System.out.println("你很机车耶");
+  }
 }

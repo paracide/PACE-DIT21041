@@ -18,11 +18,16 @@ public class Car extends Vehicle {
 
   @Override
   public void drive() {
-    System.out.println("Didi");
+    System.out.println("Rage your dream");
   }
 
   @Override
   public String toString() {
     return super.toString() + "/" + getNumberOfDoors();
+  }
+
+  @Override
+  public void hook() {
+    System.out.println("Didi");
   }
 }

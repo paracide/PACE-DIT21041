@@ -9,4 +9,9 @@ public class Bus extends Vehicle {
   public void drive() {
     System.out.println("Free bus");
   }
+
+  @Override
+  public void hook() {
+    System.out.println("Didu");
+  }
 }
